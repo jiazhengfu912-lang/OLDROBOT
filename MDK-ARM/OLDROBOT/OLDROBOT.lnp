@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"oldrobot\startup_stm32f103xb.o"
+"oldrobot\main.o"
+"oldrobot\gpio.o"
+"oldrobot\usart.o"
+"oldrobot\stm32f1xx_it.o"
+"oldrobot\stm32f1xx_hal_msp.o"
+"oldrobot\stm32f1xx_hal_gpio_ex.o"
+"oldrobot\stm32f1xx_hal_tim.o"
+"oldrobot\stm32f1xx_hal_tim_ex.o"
+"oldrobot\stm32f1xx_hal_uart.o"
+"oldrobot\stm32f1xx_hal.o"
+"oldrobot\stm32f1xx_hal_rcc.o"
+"oldrobot\stm32f1xx_hal_rcc_ex.o"
+"oldrobot\stm32f1xx_hal_gpio.o"
+"oldrobot\stm32f1xx_hal_dma.o"
+"oldrobot\stm32f1xx_hal_cortex.o"
+"oldrobot\stm32f1xx_hal_pwr.o"
+"oldrobot\stm32f1xx_hal_flash.o"
+"oldrobot\stm32f1xx_hal_flash_ex.o"
+"oldrobot\stm32f1xx_hal_exti.o"
+"oldrobot\system_stm32f1xx.o"
+"oldrobot\servo_bus.o"
+--strict --scatter "OLDROBOT\OLDROBOT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OLDROBOT.map" -o OLDROBOT\OLDROBOT.axf
